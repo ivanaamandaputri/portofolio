@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-size: 1rem; /* 16px */
+  line-height: 1.9rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/* button */
+.btn {
+  padding: 1.5rem;
+  background: white;
+  border: 1.5px solid black;
+  cursor: pointer;
+}
+
+/* title */
+.pre-title {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: grey;
+  position: relative;
+  padding-left: 40px;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.pre-title::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background: black;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+/* logo dan navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+  transition: 0, 2s ease-inout;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.logo {
+  display: fex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 2 rem;
+}
+
+.logo a {
+  color: black;
+}
+
+nav ul i a {
+  color: black;
+}
+
+/* home section */
+#home {
+  height: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.home-name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem;
+  color: black;
+}
+
+.home-right img {
+  width: 400px;
+  border-radius: 0.7rem;
+}
+
+.home-right {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  padding-left: 3rem;
+  padding-bottom: 5rem;
+}
+
+/* About section */
+#about {
+  background-color: rgb(209, 207, 207);
+  padding: 6rem 0;
+}
+
+.section-title-about {
+  text-align: center;
+  margin: 1rem 0 4rem;
+}
+
+/* layout */
+/* layout */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Pastikan ada tiga kolom dengan fraksi yang sama */
+  gap: 3rem;
+}
+
+.about {
+  background-color: white;
+  color: black;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 0.7rem;
+}
+
+.about h4,
+.about p {
+  color: black;
+}
+
+.about-icon {
+  /* background-color: rgb(209, 207, 207); */
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 1.3rem;
+  border-radius: 0.5rem;
+}
+/* end of about */
+
+/* skills & experience */
+.skills-left,
+.skills-right {
+  text-align: center; /* Pusatkan isi teks */
+}
+#Skills {
+  display: flex;
+  flex-direction: column; /* Menjadikan section menjadi flexbox */
+  justify-content: center; /* Pusatkan section */
+  align-items: center; /* Pusatkan section */
+  padding: 6rem 0;
+  background: white;
+}
+
+.skill {
+  width: 100%; /* Pastikan section memiliki lebar penuh */
+  max-width: 800px; /* Sesuaikan lebar maksimum kontainer */
+  text-align: center; /* Pusatkan konten di dalam section */
+}
+.section-titles-skills {
+  text-align: center;
+  margin: 1rem 0 4rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Sesuaikan lebar kolom */
+  gap: 2rem;
+}
+
+.experience line {
+  padding: 0 0.7rem;
+}
+
+.experience .line div {
+  width: 2px;
+  height: 100%;
+  background: black;
+  position: relative;
+}
+
+.experience,
+.experience-info {
+  text-align: left; /* Pastikan teks di dalam pengalaman dan informasi pengalaman berada di kiri */
+}
+
+.experience-date {
+  margin-bottom: 3rem;
+}
+
+.experience .line div::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-right {
+  line-height: 2rem;
+  padding: 0 1rem;
+}
+
+/* end of experience & skills */
+
+/* contact section */
+#contact {
+  padding: 6rem;
+}
+
+.contact-form div {
+  margin-bottom: 1.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 1.3rem;
+  font-family: "Roboto", sans-serif;
+  background: white;
+  border: 1px soild gainsboro;
+  border-radius: 3px;
+  resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: black;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px soild gray;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 0.75rem 1.3rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-submit {
+  background-color: rgb(209, 207, 207);
+  color: black;
+}
+
+/* end of contact */
+/* footer */
+footer {
+  margin-bottom: 0;
+  padding: 4 rem;
+  background: rgb(209, 207, 207);
+  text-align: center;
+}
+
+.footer-icons {
+  margin-bottom: 1rem;
+}
+
+.footer-icons a:hover {
+  fill: grey;
+}
+
+/* Aturan CSS yang berlaku untuk layar dengan lebar maksimum 768px */
+@media only screen and (max-width: 768px) {
+  .main-container {
+    width: 90%; /* Mengurangi lebar kontainer agar lebih responsif */
+  }
+
+  /* Mengubah tata letak kolom pada grid-3 menjadi satu kolom penuh */
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  /* Mengatur padding pada section */
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Mengatur lebar gambar pada bagian home-right agar responsif */
+  .home-right img {
+    width: 100%;
+  }
+
+  /* Mengatur tata letak flexbox pada .nav agar lebih responsif */
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Mengatur lebar logo agar lebih responsif */
+  .logo {
+    margin-bottom: 1rem; /* Menambah jarak antara logo dan menu navigasi */
+  }
+
+  /* Mengatur tata letak flexbox pada skills-grid agar lebih responsif */
+  .skills-grid {
+    grid-template-columns: 1fr; /* Menjadi satu kolom penuh */
+  }
+
+  /* Mengatur tata letak flexbox pada skills-list agar lebih responsif */
+  .skills-list ul {
+    flex-direction: column; /* Menjadi satu kolom penuh */
+  }
+}
